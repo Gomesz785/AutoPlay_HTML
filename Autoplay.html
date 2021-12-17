@@ -1,12 +1,18 @@
 <!DOCTYPE HTML>
 <html>
 <body>
-<audio 
- loop="true" 
+<script>
+if (confirm('Play music?')) {
+  var x = document.getElementById("1"); 
+  x = "loop="true" 
  autoplay="true" 
  src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">            
  Your browser does not support the
- <code>audio</code> element.
-</audio>
+ <code>audio</code> element."
+} else {
+  console.log('No music!');
+}
+</script>
+<audio id=1></audio>
 <body/>
 <html/>
